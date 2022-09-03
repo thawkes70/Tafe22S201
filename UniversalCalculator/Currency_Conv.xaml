@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Calculator.Currency_Conv"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="627*"/>
+			<RowDefinition Height="373*"/>
+		</Grid.RowDefinitions>
+		<TextBlock x:Name="HeadingTextBlock" HorizontalAlignment="Left" Margin="150,61,0,0" Text="Currency Converter Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="1175" FontSize="72" TextAlignment="Center" FontWeight="Bold"/>
+		<TextBox x:Name="AmountTextBox" HorizontalAlignment="Left" Margin="104,244,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="370" FontSize="24"/>
+		<ComboBox x:Name="FromComboBox" Margin="553,244,0,0" Width="370" Height="70" PlaceholderText="" Text="Blah Blah" FontSize="24">
+			<ComboBoxItem Content="US Dollar" IsSelected="True"/>
+			<ComboBoxItem Content="Euro"/>
+			<ComboBoxItem Content="British Pound"/>
+			<ComboBoxItem Content="Indian Rupee"/>
+		</ComboBox>
+		<ComboBox x:Name="ToComboBox" Margin="1004,244,0,0" Width="370" Height="70" FontSize="24">
+			<ComboBoxItem Content="Euro" IsSelected="True"/>
+			<ComboBoxItem Content="British Pound"/>
+			<ComboBoxItem Content="Indian Rupee"/>
+			<ComboBoxItem Content="US Dollar"/>
+		</ComboBox>
+		<TextBlock x:Name="AmountTextBlock" HorizontalAlignment="Left" Margin="104,185,0,0" Text="Amount $" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="364" FontSize="36" RequestedTheme="Default"/>
+		<TextBlock x:Name="FromTextBlock" HorizontalAlignment="Left" Margin="553,185,0,0" Text="From" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="364" FontSize="36" RequestedTheme="Default"/>
+		<TextBlock x:Name="ToTextBlock" HorizontalAlignment="Left" Margin="1011,185,0,0" Text="To" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="364" FontSize="36" RequestedTheme="Default"/>
+		<TextBlock x:Name="SourceTextBlock" HorizontalAlignment="Left" Margin="104,336,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="230" FontSize="20"/>
+		<TextBlock x:Name="FromResultTextBlock" HorizontalAlignment="Left" Margin="104,473,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="470" FontSize="20"/>
+		<TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Left" Margin="104,386,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="833" FontSize="36"/>
+		<TextBlock x:Name="ToResultTextBlock" HorizontalAlignment="Left" Margin="104,541,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="470" FontSize="20"/>
+		<Button x:Name="ConvertButton" Content="Currency Conversion" Margin="0,610,0,0" VerticalAlignment="Top" Height="78" Width="616" HorizontalAlignment="Center" FontSize="40" Click="ConvertButton_Click" Grid.RowSpan="2"/>
+		<Button x:Name="ExitButton" Content="Exit" Margin="0,121,0,0" VerticalAlignment="Top" Height="78" Width= "150" HorizontalAlignment="Center" FontSize="40" Grid.Row="1" Click="ExitButton_Click"/>
+
+	</Grid>
+</Page>
