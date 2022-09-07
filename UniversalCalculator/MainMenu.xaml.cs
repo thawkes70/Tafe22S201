@@ -19,5 +19,10 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(Currency_Conv));
 		}
+
+		private void MortgageButton_Copy_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(Mortgage_Calc));
+		}
 	}
 }

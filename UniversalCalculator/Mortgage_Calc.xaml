@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Calculator.Mortgage_Calc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="491*"/>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCalc" Content="Calculate" Margin="196,564,0,0" VerticalAlignment="Top" Click="btnCalc_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Margin="216,626,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.003,0.594" Click="btnExit_Click"/>
+        <TextBox x:Name="txt_princBorrow" HorizontalAlignment="Left" Margin="297,149,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279"/>
+        <TextBlock x:Name="princBorrow" HorizontalAlignment="Left" Margin="50,149,0,0" Text="Principal Borrow $ " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12"/>
+        <TextBlock x:Name="years" HorizontalAlignment="Left" Margin="50,213,0,0" Text="Years " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.02,-2.888"/>
+        <TextBox x:Name="txt_years" HorizontalAlignment="Left" Margin="297,213,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279"/>
+        <TextBlock x:Name="months" HorizontalAlignment="Left" Margin="50,278,0,0" Text=" and Months" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.02,-2.888"/>
+        <TextBox x:Name="txt_months" HorizontalAlignment="Left" Margin="297,278,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279"/>
+        <TextBlock x:Name="intrestRate" HorizontalAlignment="Left" Margin="50,346,0,0" Text="Yearly Interest Rate" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.02,-2.888"/>
+        <TextBox x:Name="txt_intrestRate" HorizontalAlignment="Left" Margin="297,334,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279"/>
+        <TextBlock x:Name="monthRate" HorizontalAlignment="Left" Margin="50,408,0,0" Text="Monthly Interest Rate" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.02,-2.888"/>
+        <TextBox x:Name="txt_monthRate" HorizontalAlignment="Left" Margin="297,395,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279" IsReadOnly="True"/>
+        <TextBlock x:Name="monthRepayment" HorizontalAlignment="Left" Margin="50,468,0,0" Text="Monthly Repayment" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.02,-2.888"/>
+        <TextBox x:Name="txt_monthRepayment" HorizontalAlignment="Left" Margin="297,455,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="279" IsReadOnly="True"/>
+        <TextBlock x:Name="heading" HorizontalAlignment="Left" Margin="152,40,0,0" Text="Mortgage Calculator " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+
+    </Grid>
+</Page>
