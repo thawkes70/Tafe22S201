@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="600">
 
     <Grid HorizontalAlignment="Left" Width="600" Margin="0,0,0,0" Background="#FFCFCDA8">
-        <Button x:Name="MathsButton" Content="Maths Calculator" Margin="0,257,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B"/>
+        <Button x:Name="MathsButton" Content="Maths Calculator" Margin="0,257,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MathsButton_Click"/>
         <Button x:Name="MortgageButton_Copy" Content="Mortgage Calculator" Margin="0,417,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MortgageButton_Copy_Click"/>
         <Button x:Name="CurrencyButton_Copy1" Content="Currency Converter" Margin="0,577,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="CurrencyButton_Copy1_Click"/>
         <Button x:Name="ExitButton_Copy2" Content="Exit" Margin="0,737,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B"/>
