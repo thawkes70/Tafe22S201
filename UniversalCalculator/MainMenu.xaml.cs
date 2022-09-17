@@ -1,5 +1,7 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Popups;
+using System;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,6 +30,13 @@ namespace Calculator
 		private void MathsButton_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MainPage));
+		}
+		
+		private async void Trip_Calculator_Click(object sender, RoutedEventArgs e)
+		{
+			var dialog = new MessageDialog("Trip calculator C# code will be developed later ");
+			await dialog.ShowAsync();
+			return;
 		}
 	}
 }
