@@ -8,12 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="600">
 
-    <Grid HorizontalAlignment="Left" Width="600" Margin="0,0,0,0" Background="#FFCFCDA8">
-        <Button x:Name="MathsButton" Content="Maths Calculator" Margin="0,257,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MathsButton_Click"/>
-        <Button x:Name="MortgageButton_Copy" Content="Mortgage Calculator" Margin="0,417,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MortgageButton_Copy_Click"/>
-        <Button x:Name="CurrencyButton_Copy1" Content="Currency Converter" Margin="0,577,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="CurrencyButton_Copy1_Click"/>
-        <Button x:Name="ExitButton_Copy2" Content="Exit" Margin="0,737,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,31,0,0" Text="Universal Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Height="120" Width="600" FontSize="55" TextAlignment="Center" FontWeight="Bold" FocusVisualPrimaryBrush="#FF3B22D8" SelectionHighlightColor="#FF161B80" Foreground="#FF06217C"/>
+	<Grid HorizontalAlignment="Left" Width="600" Margin="0,0,0,0" Background="#FFCFCDA8">
+		<Button x:Name="MathsButton" Content="Maths Calculator" Margin="0,145,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MathsButton_Click"/>
+		<Button x:Name="MortgageButton_Copy" Content="Mortgage Calculator" Margin="0,320,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="MortgageButton_Copy_Click"/>
+		<Button x:Name="CurrencyButton_Copy1" Content="Currency Converter" Margin="0,500,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B" Click="CurrencyButton_Copy1_Click"/>
+		<Button x:Name="ExitButton_Copy2" Content="Exit" Margin="0,838,0,0" VerticalAlignment="Top" Height="140" Width="350" HorizontalAlignment="Center" FontSize="36" Background="#330C0B0B"/>
+		<TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,31,0,0" Text="Universal Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Height="120" Width="600" FontSize="55" TextAlignment="Center" FontWeight="Bold" FocusVisualPrimaryBrush="#FF3B22D8" SelectionHighlightColor="#FF161B80" Foreground="#FF06217C"/>
+		<Button x:Name="Trip_Calculator" Content="Trip Calculator" Height="127" Width="351" Margin="0,671,0,0" VerticalAlignment="Top" FontSize="36" HorizontalAlignment="Center" Click="Trip_Calculator_Click"/>
 
-    </Grid>
+	</Grid>
 </Page>
